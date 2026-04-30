@@ -172,17 +172,37 @@ function Scene({
   onPress,
 }: SceneProps) {
   const textures = useSkillTextures();
-  const { size } = useThree();
-  // Shrink the keyboard for narrow viewports so all 5 columns stay on screen.
-  // size.width is the canvas pixel width.
-  const responsiveScale =
-    size.width < 480 ? 0.36 : size.width < 768 ? 0.45 : 0.6;
+  const { size, camera } = useThree();
+
+  const isMobile = size.width < 768;
+  const isNarrow = size.width < 480;
+
+  // Adapt camera + scale + rotation for portrait phones so all 25 keys fit
+  useEffect(() => {
+    const cam = camera as THREE.PerspectiveCamera;
+    if (isNarrow) {
+      cam.position.set(0, 6.5, 11);
+      cam.fov = 38;
+    } else if (isMobile) {
+      cam.position.set(0, 6, 9);
+      cam.fov = 34;
+    } else {
+      cam.position.set(0, 5, 6.5);
+      cam.fov = 30;
+    }
+    cam.lookAt(0, 0, 0);
+    cam.updateProjectionMatrix();
+  }, [camera, isMobile, isNarrow]);
+
+  const scale = isNarrow ? 0.45 : isMobile ? 0.5 : 0.6;
+  const rotY = isMobile ? Math.PI / 16 : Math.PI / 10;
+  const rotX = isMobile ? Math.PI / 8 : Math.PI / 6;
 
   return (
     <group
-      rotation={[Math.PI / 6, Math.PI / 10, 0]}
+      rotation={[rotX, rotY, 0]}
       position={[0, -0.3, 0]}
-      scale={responsiveScale}
+      scale={scale}
     >
       <RoundedBox
         args={[COLS * SPACING + 0.6, 0.55, ROWS * SPACING + 0.6]}
@@ -262,7 +282,7 @@ const TechStack = () => {
     <div className="techstack" ref={sectionRef}>
       <div className="techstack-header">
         <h2>Tech Stack</h2>
-        <p className="techstack-hint">(hover a key)</p>
+        <p className="techstack-hint">(hover or tap a key)</p>
       </div>
       {hoveredSkill && (
         <div className="techstack-tooltip" key={hoveredSkill.name}>
