@@ -113,15 +113,90 @@ body {
   margin-bottom: -100px;
 }
 
+.techstack-header {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  pointer-events: none;
+}
+
 .techstack h2 {
   font-size: 80px;
-  text-align: center;
+  font-weight: 700;
+  text-transform: none;
+  margin: 0;
+  line-height: 1;
+}
+
+.techstack-hint {
+  margin: 8px 0 0 0;
+  font-size: 16px;
+  opacity: 0.7;
+  font-weight: 600;
+}
+
+.techstack-canvas {
   position: absolute;
+  inset: 0;
   width: 100%;
-  top: 120px;
-  left: 0;
-  font-weight: 400;
-  text-transform: uppercase;
+  height: 100%;
+}
+
+.techstack-canvas > div,
+.techstack-canvas canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.techstack-loading {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.techstack-tooltip {
+  position: absolute;
+  top: 28%;
+  left: 6%;
+  z-index: 3;
+  pointer-events: none;
+  max-width: 360px;
+  animation: techstack-tooltip-in 0.22s ease-out;
+}
+.techstack-tooltip h3 {
+  font-size: 56px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.techstack-tooltip p {
+  margin: 10px 0 0;
+  font-size: 17px;
+  opacity: 0.85;
+  font-weight: 500;
+  line-height: 1.4;
+}
+@keyframes techstack-tooltip-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media screen and (max-width: 900px) {
+  .techstack-tooltip {
+    top: auto;
+    bottom: 12%;
+    left: 6%;
+    right: 6%;
+    max-width: none;
+  }
+  .techstack-tooltip h3 { font-size: 32px; }
+  .techstack-tooltip p { font-size: 14px; }
 }
 
 @media screen and (min-width: 768px) {
@@ -133,5 +208,8 @@ body {
 @media screen and (max-width: 900px) {
   .techstack h2 {
     font-size: 40px;
+  }
+  .techstack-hint {
+    font-size: 12px;
   }
 }

@@ -5,32 +5,28 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "SuperNova IND",
+    category: "AI Solutions Studio",
+    tools: "AI Engineering, Product, Branding, Web Design, Operations",
+    image:
+      "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fsupernovaind.com?w=1200&h=800",
+    link: "https://supernovaind.com",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
+    title: "Google Boost",
+    category: "Local Business Growth Platform",
+    tools: "Google profile optimization, lead capture, automated outreach",
+    image:
+      "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fgoogleboost.supernovaind.com?w=1200&h=800",
+    link: "https://googleboost.supernovaind.com",
   },
   {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Nexus",
+    category: "AI Workflow & Integration Hub",
+    tools: "LLM orchestration, automation pipelines, integrations dashboard",
+    image:
+      "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fnexus.supernovaind.com?w=1200&h=800",
+    link: "https://nexus.supernovaind.com",
   },
 ];
 

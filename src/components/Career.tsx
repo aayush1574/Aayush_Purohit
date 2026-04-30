@@ -15,58 +15,55 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>Founder &amp; COO</h4>
+                <h5>SuperNova IND</h5>
               </div>
-              <h3>NOW</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
+              Leading SuperNova IND — building production-grade AI solutions
+              across our flagship platforms: supernovaind.com,
+              googleboost.supernovaind.com and nexus.supernovaind.com. Owning
+              product direction, engineering and day-to-day operations.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
+                <h4>Azure AI Engineer Associate</h4>
+                <h5>Microsoft Certified · AI-102</h5>
               </div>
-              <h3>2017–24</h3>
+              <h3>2025</h3>
             </div>
             <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
+              Microsoft Azure AI Engineer Associate (AI-102), valid till Nov 2026.
+              Also Azure Fundamentals (AZ-900), valid till Dec 2026.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
+                <h4>B.Tech, CSE (Blockchain Technology)</h4>
+                <h5>Samrat Ashok Technological Institute · Vidisha</h5>
               </div>
-              <h3>2016–17</h3>
+              <h3>2022–26</h3>
             </div>
             <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
+              Bachelor of Technology in Computer Science &amp; Engineering with a
+              specialization in Blockchain Technology — Nov 2022 to Apr 2026.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
+                <h4>Higher Secondary (Class 12)</h4>
+                <h5>New Shanti Niketan HSS · Vidisha</h5>
               </div>
-              <h3>2013-16</h3>
+              <h3>2020–22</h3>
             </div>
             <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Completed Higher Secondary education from New Shanti Niketan Higher
+              Secondary School, Vidisha, MP.
             </p>
           </div>
         </div>

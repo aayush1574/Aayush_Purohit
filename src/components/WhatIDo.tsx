@@ -87,20 +87,22 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>AI & AUTOMATION</h3>
-              <h4>Workflow Intelligence for Organizations</h4>
+              <h3>AI ENGINEERING</h3>
+              <h4>I Develop AI Solutions</h4>
               <p>
-                AI specialist helping organizations automate workflows—internal ops
-                and customer-facing—so teams ship faster with less manual work.
+                I design and ship end-to-end AI systems — from voice agents that
+                speak over phone calls to automation tools that apply for jobs at
+                scale. I take models out of notebooks and turn them into reliable
+                products people actually use.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">LLMs &amp; agents</div>
-                <div className="what-tags">Workflow design</div>
-                <div className="what-tags">RAG &amp; retrieval</div>
-                <div className="what-tags">Evals &amp; guardrails</div>
-                <div className="what-tags">Integrations</div>
-                <div className="what-tags">Product strategy</div>
+                <div className="what-tags">Python</div>
+                <div className="what-tags">LLMs</div>
+                <div className="what-tags">ASR / TTS</div>
+                <div className="what-tags">Scikit-learn</div>
+                <div className="what-tags">Pandas / NumPy</div>
+                <div className="what-tags">Automation</div>
               </div>
               <div className="what-arrow"></div>
             </div>
@@ -124,21 +126,21 @@ const WhatIDo = () => {
             </div>
             <div className="what-corner"></div>
             <div className="what-content-in">
-              <h3>BUILD &amp; SCALE</h3>
-              <h4>Shipping AI in Production</h4>
+              <h3>BUILD &amp; SHIP</h3>
+              <h4>From Idea to Production</h4>
               <p>
-                I build the systems behind it: APIs, data, voice/real-time, and
-                full-stack products—production-ready, not slide decks.
+                I take AI ideas all the way to production — wiring up backends,
+                APIs and clean web frontends so the model isn't just a demo, it's
+                a working product people can actually open and use.
               </p>
               <h5>Skillset & tools</h5>
               <div className="what-content-flex">
-                <div className="what-tags">Node.js</div>
                 <div className="what-tags">Python</div>
-                <div className="what-tags">REST &amp; real-time APIs</div>
-                <div className="what-tags">PostgreSQL</div>
-                <div className="what-tags">MongoDB</div>
                 <div className="what-tags">React</div>
-                <div className="what-tags">Cloud &amp; infra</div>
+                <div className="what-tags">REST APIs</div>
+                <div className="what-tags">Cloud (AWS / Azure / GCP)</div>
+                <div className="what-tags">Databases</div>
+                <div className="what-tags">CI/CD</div>
               </div>
               <div className="what-arrow"></div>
             </div>

@@ -11,27 +11,31 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://www.linkedin.com/in/akashrmalhotra/"
-                target="_blank"
-                rel="noreferrer"
+                href="mailto:aayush.purohit150704@gmail.com"
                 data-cursor="disable"
               >
-                LinkedIn — akashrmalhotra
+                aayush.purohit150704@gmail.com
               </a>
             </p>
+            <p>
+              <a href="tel:+917225083904" data-cursor="disable">
+                +91-7225083904
+              </a>
+            </p>
+            <p>Vidisha, Madhya Pradesh</p>
             <h4>Education</h4>
             <p>
-              PGPWE (MBA), Indian Institute of Management, Lucknow — 2021–2023
+              B.Tech CSE (Blockchain Technology), Samrat Ashok Technological
+              Institute, Vidisha — 2022–2026
             </p>
             <p>
-              B.Tech Computer Science, Manav Rachna Educational Institutions —
-              2009–2013
+              Higher Secondary, New Shanti Niketan HSS, Vidisha — 2020–2022
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/akashrmalhotra"
+              href="https://github.com/aayush1574"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -40,7 +44,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/akashrmalhotra/"
+              href="https://www.linkedin.com/in/aayush-purohit-17a440369/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -49,27 +53,18 @@ const Contact = () => {
               LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="https://www.youtube.com/@Leftbraincoder"
+              href="https://portfolio-website-jade-nine-84.vercel.app/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              YouTube <MdArrowOutward />
-            </a>
-            <a
-              href="https://www.instagram.com/leftbraincoder/"
-              target="_blank"
-              rel="noreferrer"
-              data-cursor="disable"
-              className="contact-social"
-            >
-              Instagram <MdArrowOutward />
+              Portfolio <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Akash Malhotra</span>
+              Designed and Developed <br /> by <span>Aayush Purohit</span>
             </h2>
             <h5>
               <MdCopyright /> 2026
