@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Environment, RoundedBox } from "@react-three/drei";
 import * as THREE from "three";
 import gsap from "gsap";
@@ -172,12 +172,17 @@ function Scene({
   onPress,
 }: SceneProps) {
   const textures = useSkillTextures();
+  const { size } = useThree();
+  // Shrink the keyboard for narrow viewports so all 5 columns stay on screen.
+  // size.width is the canvas pixel width.
+  const responsiveScale =
+    size.width < 480 ? 0.36 : size.width < 768 ? 0.45 : 0.6;
 
   return (
     <group
       rotation={[Math.PI / 6, Math.PI / 10, 0]}
       position={[0, -0.3, 0]}
-      scale={0.6}
+      scale={responsiveScale}
     >
       <RoundedBox
         args={[COLS * SPACING + 0.6, 0.55, ROWS * SPACING + 0.6]}
