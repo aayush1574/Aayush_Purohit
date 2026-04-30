@@ -192,6 +192,10 @@
   position: relative;
   width: 100%;
   max-width: 600px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #1a1a1d;
 }
 
 .work-link {
@@ -231,13 +235,13 @@
 }
 
 .work-image img {
-  display: block;
+  position: absolute;
+  inset: 0;
   width: 100%;
-  height: auto;
-  max-height: 400px;
+  height: 100%;
+  display: block;
   object-fit: cover;
-  object-position: top;
-  border-radius: 8px;
+  object-position: top center;
 }
 
 /* ── Responsive ── */
@@ -332,7 +336,7 @@
     padding: 30px 0;
   }
 
-  .work-image img {
-    max-height: 250px;
+  .work-image-in {
+    max-width: 100%;
   }
 }
